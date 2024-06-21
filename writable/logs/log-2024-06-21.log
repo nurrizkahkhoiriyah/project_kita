@@ -1,0 +1,11 @@
+CRITICAL - 2024-06-21 17:54:49 --> ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\siakad_kampus\app\Config\Events.php:33)
+[Method: GET, Route: index.php]
+in SYSTEMPATH\Debug\Toolbar.php on line 472.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify header information - headers already sent by (output started at C:\\xampp\\htdocs\\siakad_kampus\\app\\Config\\Events.php:33)', 'C:\\xampp\\htdocs\\siakad_kampus\\system\\Debug\\Toolbar.php', 472)
+ 2 SYSTEMPATH\Debug\Toolbar.php(472): header('Content-Type: application/javascript')
+ 3 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 4 SYSTEMPATH\Events\Events.php(155): CodeIgniter\Events\Events::Config\{closure}()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\Events\Events::trigger('pre_system')
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
