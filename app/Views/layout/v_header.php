@@ -6,7 +6,7 @@
     <nav class="navbar navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="<?= base_url() ?>" class="navbar-brand"><b>SIAKAD</b> Kampus</a>
+          <a href="<?= base_url() ?>template" class="navbar-brand"><b>SIAKAD</b> Kampus</a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>
