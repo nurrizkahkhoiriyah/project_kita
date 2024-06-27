@@ -21,8 +21,9 @@
         <!-- Navbar Right Menu -->
         <div class="navbar-custom-menu">
           <ul class="nav navbar-nav">
-
-
+            <?php if (session()->get('username')==""){ ?>
+              <li><a href="<?= base_url('auth') ?>"><i class="fa fa-sign-in"></i> Login</a></li>
+            <?php } else{ ?>
             <!-- User Account Menu -->
             <li class="dropdown user user-menu">
               <!-- Menu Toggle Button -->
@@ -54,6 +55,7 @@
                 </li>
               </ul>
             </li>
+            <?php } ?>
           </ul>
         </div>
         <!-- /.navbar-custom-menu -->
