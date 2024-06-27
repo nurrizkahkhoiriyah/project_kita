@@ -5,15 +5,14 @@
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">Silakan Login</p>
-
-    <form action="../../index2.html" method="post">
+    <?php echo form_open() ?>
       <div class="form-group has-feedback">
         <input name= "username" class="form-control" placeholder="Username">
         <span class="fa fa-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
         <select name="level" class="form-control">
-            <option value="">--Pilih Hak Akses--</option>
+            <option value="">Login sebagai</option>
             <option value="1">Admin</option>
             <option value="2">Mahasiswa</option>
             <option value="2">Dosen</option>
@@ -30,7 +29,7 @@
         </div>
         <!-- /.col -->
       </div>
-    </form>
+    <?php echo form_close() ?>
 
   </div>
   <!-- /.login-box-body -->
