@@ -5,7 +5,9 @@
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">Silakan Login</p>
-    <?php echo form_open() ?>
+    <?php 
+    echo form_open('auth/cek_login');
+    ?>
       <div class="form-group has-feedback">
         <input name= "username" class="form-control" placeholder="Username">
         <span class="fa fa-user form-control-feedback"></span>
